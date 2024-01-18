@@ -8,16 +8,16 @@
         <script>
             function isPrimeNumber(num) { // 判定用の関数
                 if (num <= 1) {
-                    window.location.href = 'index.html';
+                    window.location.href = 'https://www.senshu-u.ac.jp/visitor/currentstudents/';
                     return false;
                 }
                 for (let i = 2; i <= Math.sqrt(num); i++) {
                     if (num % i === 0) {
-                        window.location.href = 'free_1-1.html';
+                        window.location.href = 'https://www.senshu-u.ac.jp/visitor/currentstudents/';
                         return false;
                     }
                 }
-                window.location.href = 'work06_1.html';
+                window.location.href = 'https://classroom.google.com/';
                 return true;
             }
             // 数値を入力
@@ -25,11 +25,11 @@
 
             if (isNaN(inputNumber)) {
                 alert("エラー：リロードしてやり直してください。");
-                window.location.href = 'index.html';
+                window.location.href = 'https://www.senshu-u.ac.jp/visitor/currentstudents/';
             } else {
                 if (inputNumber <= 0) {
                     alert("エラー：リロードしてやり直してください。");
-                    window.location.href = 'index.html';
+                    window.location.href = 'https://www.senshu-u.ac.jp/visitor/currentstudents/';
                 } else {
                     if (isPrimeNumber(inputNumber)) {  
                         alert(inputNumber + "は素数です。");
