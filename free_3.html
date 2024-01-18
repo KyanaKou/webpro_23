@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>素数判別機</title>
+    </head>
+    <body>
+        <script>
+            function isPrimeNumber(num) { // 判定用の関数
+                if (num <= 1) {
+                    window.location.href = 'index.html';
+                    return false;
+                }
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        window.location.href = 'free_1-1.html';
+                        return false;
+                    }
+                }
+                window.location.href = 'work06_1.html';
+                return true;
+            }
+            // 数値を入力
+            let inputNumber = prompt('数を入力してください:');
+
+            if (isNaN(inputNumber)) {
+                alert("エラー：リロードしてやり直してください。");
+                window.location.href = 'index.html';
+            } else {
+                if (inputNumber <= 0) {
+                    alert("エラー：リロードしてやり直してください。");
+                    window.location.href = 'index.html';
+                } else {
+                    if (isPrimeNumber(inputNumber)) {  
+                        alert(inputNumber + "は素数です。");
+                    } else {
+                        alert(inputNumber + "は素数ではありません。");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f497a5;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #dddddd;
+    color: black;
+}
+
+nav {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+nav li {
+    float: center;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    margin-top: 20px;
+}
+
+a:hover {  /* リンク（カーソルオン） */
+    color:#bd0000;
+    text-decoration:underline;  /* 文字の飾り（下線） */
+}
